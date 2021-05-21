@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
+    <!-- <script src=" https://code.jquery.com/jquery-3.6.0.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Chat App</a>
+        </div>
+    </nav>
+
+    <div id="loginBox">
+        <h3>LogIn</h3>
+        <div class="row">
+              <div class="row">
+                <div class="input-field col s4">
+                  <input placeholder="Username" id="inpUsername" type="text" class="validate">
+                  <label for="inpUsername">Username</label>
+                </div>
+                <div class="input-field col s4">
+                  <input id="inpPassword" type="password" class="validate" placeholder="password">
+                  <label for="inpPassword">Last Name</label>
+                </div>
+              </div>
+             
+              </div>
+              <button class="btn waves-effect waves-light " id="btnStart">Submit
+            </button>
+                  
+          </div>
+    </div>
+
+    <div id="chatBox">
+        <h3>Chat Box</h3>
+        <input id="inpToUser" placeholder="Send to (Default Everyone)">
+        <input id="inpNewMsg" placeholder="New Message">
+        <button class="btn wave-effect wave-light" id="btnSend">SEND</button>
+        <ul id="ulMsgs" class="collection"></ul>
+
+
+        
+
+
+    </div>
+
+</body>
+</html>
